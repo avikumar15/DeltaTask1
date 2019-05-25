@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/LinLay"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess the age and hit GO"
+        android:textColor="#000"
+        android:id="@+id/t6"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/t12"
+        android:layout_below="@+id/t6"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/t6"
+        android:layout_marginTop="25dp"
+        android:id="@+id/layy"
+        >
+
+    <EditText
+        android:layout_width="120dp"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:hint="Age (1-100)"
+        android:id="@+id/et2"
+        android:layout_below="@+id/t6"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:id="@+id/b4"
+        android:onClick="go2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Result"
+        android:id="@+id/b7"
+        android:onClick="go5"
+        android:layout_marginStart="-160dp"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t5"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/layy"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tries Left - 5"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:id="@+id/t1"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/t5"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Can't take anymore?"
+        android:gravity="end"
+        android:textColor="#000"
+        android:id="@+id/tease"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/t1"
+        />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tease"
+        android:backgroundTint="#cc1212"
+        android:onClick="restart"
+        android:text="QUIT"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Degree of Inaccuracy in %"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_below="@+id/b5"
+        android:id="@+id/degreee"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:background="#F6EBF4"
+        android:layout_below="@+id/degreee"
+        android:id="@+id/colour"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:textColor="#000"
+            android:text="100%"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#FF3300"
+            android:text="90%"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ff6600"
+            android:text="80%"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#FF9900"
+            android:textColor="#000"
+            android:text="70%"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:background="#FFCC00"
+            android:text="60%"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:background="#FFFF00"
+            android:text="50%"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ccff00"
+            android:textColor="#000"
+            android:text="40%"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#99ff00"
+            android:textColor="#000"
+            android:text="30%"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#66ff00"
+            android:textColor="#000"
+            android:text="20%"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00FF00"
+            android:textColor="#000"
+            android:text="10%"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

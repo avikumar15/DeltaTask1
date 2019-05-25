@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finalActivity"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/finalbackground"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#10931c"
+        android:gravity="center"
+        android:id="@+id/t10"
+        android:text="asbs"
+        android:layout_weight="3"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Games won - "
+        android:id="@+id/t2"
+        android:textColor="#000"
+        android:paddingStart="30dp"
+        android:textSize="30sp"
+        android:layout_marginBottom="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Games lost - "
+        android:paddingStart="30dp"
+        android:textSize="30sp"
+        android:id="@+id/t3"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Another try, maybe?"
+        android:gravity="end"
+        android:textColor="#000"
+        android:paddingEnd="40dp"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start over"
+        android:id="@+id/b6"
+        android:textColor="#000"
+        android:layout_gravity="end"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:onClick="Startover"
+        />
+
+</LinearLayout>

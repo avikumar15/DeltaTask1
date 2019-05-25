@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DeltaTask1</string>
+    <string name="rule">Play this game without reading rules at your own <b>risk!!!</b></string>
+    <string name="title_activity_rule">activity_rule</string>
+    <string name="game_of_death">GAME OF DEATH</string>
+    <string name="enter_your_death_age_and_hit_go">Enter Your Death Age and hit GO</string>
+    <string name="age_1_100">Age (1-100)</string>
+    <string name="go">GO</string>
+    <string name="invalid">INVALID</string>
+    <string name="rule2">RULES</string>
+    <string name="start">Start</string>
+    <string name="h">HELLO</string>
+</resources>
