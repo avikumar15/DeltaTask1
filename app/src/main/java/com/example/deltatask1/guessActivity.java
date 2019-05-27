@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,9 +28,10 @@ public class guessActivity extends AppCompatActivity {
     LinearLayout root,colour;
 
 
+    int k=0;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guess);
 
@@ -38,7 +40,7 @@ public class guessActivity extends AppCompatActivity {
         b4=(Button)findViewById(R.id.b4);
         b5=(Button)findViewById(R.id.b5);
         b7=(Button)findViewById(R.id.b7);
-        b7.setVisibility(INVISIBLE);
+
 
         t1=(TextView)findViewById(R.id.t1);
         t5=(TextView)findViewById(R.id.t5);
@@ -51,11 +53,46 @@ public class guessActivity extends AppCompatActivity {
         root=(LinearLayout)findViewById(R.id.LinLay);
 
         et2.setText("");
+
+        b7.setVisibility(INVISIBLE);
+
+        t1.setText("Tries Left - "+(5-k));
+
+    }
+
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        setContentView(R.layout.activity_guess);
+
+        et2=(EditText)findViewById(R.id.et2);
+
+        b4=(Button)findViewById(R.id.b4);
+        b5=(Button)findViewById(R.id.b5);
+        b7=(Button)findViewById(R.id.b7);
+
+
+        t1=(TextView)findViewById(R.id.t1);
+        t5=(TextView)findViewById(R.id.t5);
+        t6=(TextView)findViewById(R.id.t6);
+        t12=(TextView)findViewById(R.id.t12);
+        degreee=(TextView)findViewById(R.id.degreee);
+        tease=(TextView)findViewById(R.id.tease);
+
+        colour=(LinearLayout)findViewById(R.id.colour);
+        root=(LinearLayout)findViewById(R.id.LinLay);
+
+        et2.setText("");
+
+        b7.setVisibility(INVISIBLE);
+
+
+        t1.setText("Tries Left - "+(5-k));
     }
 
 
 
-    int k=0;
     int a=0,b=0;
     int flag=0;
     public void go2 (View view)
